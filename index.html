@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">YourLogo</a>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Color Scheme Switcher -->
+
+            <select id="colorSchemeSwitcher">
+                <option value="default">Default</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero animate">
+        <h1>Hi, I’m [Your Name]</h1>
+        <p>Your professional consulting partner for [Your Expertise]</p>
+        <br/>
+        <a href="#contact" class="cta-button animate">Let's Connect</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about animate">
+        <h2>About Me</h2>
+        <p>A brief bio that explains your background, experience, and specialties.</p>
+    </section>
+
+    <!-- Services Section with Layout Variants -->
+    <section id="services" class="services animate">
+        <h2>My Services</h2>
+        <div class="service-item">Service 1</div>
+        <div class="service-item">Service 2</div>
+        <div class="service-item">Service 3</div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio animate">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">Project 1</div>
+        <div class="portfolio-item">Project 2</div>
+        <div class="portfolio-item">Project 3</div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials animate">
+        <h2>Testimonials</h2>
+        <div class="testimonial-item">"Amazing experience working with [Your Name]!" - Client A</div>
+        <div class="testimonial-item">"Professional and reliable." - Client B</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact animate">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#facebook">Facebook</a>
+            <a href="#linkedin">LinkedIn</a>
+            <a href="#twitter">Twitter</a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

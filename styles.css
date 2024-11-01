@@ -1,0 +1,191 @@
+/* CSS Variables for Color Schemes */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f0f0f0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero .cta-button:hover {
+    background: #f0a500;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-item, .portfolio-item, .testimonial-item {
+    margin: 10px;
+    padding: 20px;
+    background: #e0e0e0;
+    display: inline-block;
+    width: 30%;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+.contact button:hover {
+    background: #f0a500;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-item, .portfolio-item, .testimonial-item {
+        width: 100%;
+    }
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #f0a500;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+/* Default Styling */
+header, .cta-button, .contact button, footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+.service-item, .portfolio-item, .testimonial-item {
+    background-color: #e0e0e0;
+}
+
+.cta-button:hover, .contact button:hover {
+    background-color: var(--secondary-color);
+}
+
+.hero, .services, .portfolio, .testimonials, .contact {
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Layout Variants */
+.services {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex-basis: 30%;
+    margin: 15px;
+}
+
+/* Animations */
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-item {
+        flex-basis: 100%;
+    }
+}
